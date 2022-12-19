@@ -23,11 +23,12 @@ public class Day01_ClassWork {
 
         //Sayfa url’inin “amazon” icerdigini test edin.
         String actualUrl = driver.getCurrentUrl();
-        if (actualUrl.contains("Url Testi PASSED")){
+        if (actualUrl.contains("amazon")){
+            System.out.println("Url testi PASSED");
         }else System.out.println("Url Testi FAILED");
 
         //Sayfa handle degerini yazdirin
-        System.out.println("Window Hamdle Deger"+ driver.getWindowHandle());
+        System.out.println("Window Handle Deger"+ driver.getWindowHandle());
 
         //Sayfa HTML kodlarinda “Gateway” kelimesi gectigini test edin
         String sayfaKodlari= driver.getPageSource();
