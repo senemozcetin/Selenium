@@ -40,9 +40,12 @@ public class C02_WebelementsVeLocators {
         List<WebElement>linklerList= driver.findElements(By.linkText("a"));
         System.out.println("Link sayisi : "+ linklerList.size());
 
+        //linkleri yazdirmak icin sout un icine list i koydugumuzda bize referanslari verdi
+        //bu sebeple weblementlerden olusan bir listeyi yazdirmak icin for each loop kullanmaliyiz
         for (WebElement w:linklerList){
             System.out.println(w.getText());
         }
+        driver.close();
 
 
 

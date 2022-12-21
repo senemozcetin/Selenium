@@ -16,7 +16,7 @@ public class C03_LocatorsGetMethodlari {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         //Amazon sayfasina gidelim
-        driver.get("http://www.amazon.com/");
+        driver.get("https://www.amazon.com/");
 
         //Search bolumunu locate edip iphone aratalim
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone", Keys.ENTER);
